@@ -1,0 +1,89 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.pnohebook-container {
+  width: 400px;
+  padding-left: 100px;
+  padding: 20px;
+}
+
+.contact-name {
+  width: 500px;
+  margin-right: 60px;
+}
+.contacts-list {
+  width: 700px;
+}
+.contacts-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contacts-list button {
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid;
+  border-color: gray;
+}
+
+.filter-container {
+  display: flex;
+  flex-direction: column;
+}
+
+label,
+input {
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  width: 100px;
+  border-radius: 4px;
+  border: 1px solid;
+  border-color: gray;
+  background-color: #fff;
+}
