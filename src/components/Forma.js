@@ -6,9 +6,16 @@ export default class ContactForm extends Component {
     number: "",
   };
 
-  handleChange = (e) => {
-    const { name, value } = e.target;
-    this.setState({ [name]: value });
+  handleChangeText = (e) => {
+    this.setState({
+      name: e.target.value,
+    });
+  };
+
+  handleChangeNumber = (e) => {
+    this.setState({
+      number: e.target.value,
+    });
   };
 
   handleSubmit = (e) => {
@@ -24,19 +31,21 @@ export default class ContactForm extends Component {
       <form className="contact-form" onSubmit={this.handleSubmit}>
         <label htmlFor="name"> Name </label>
         <input
+          required="name"
           value={name}
           name="name"
           id="name"
           type="text"
-          onChange={this.handleChange}
+          onChange={this.handleChangeText}
         />
         <label htmlFor="number"> Number </label>
         <input
+          required="number"
           value={number}
           name="number"
           id="number"
           type="text"
-          onChange={this.handleChange}
+          onChange={this.handleChangeNumber}
         />
         <button type="submit"> Add contact</button>
       </form>

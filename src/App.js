@@ -49,7 +49,7 @@ export default class App extends Component {
   changeFilter = (filter) => {
     this.setState({ filter });
   };
-  np;
+
   getVisibleContacts = () => {
     const { contacts, filter } = this.state;
 
